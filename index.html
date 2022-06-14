@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nintendo</title>
+	<style>
+		*{  box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		.banner{
+			width: 100%;
+			height: 700px;
+			background-image: url(https://i.postimg.cc/SRV2F1rs/5dd5530c4245f6ca1a0f7e900b90dc83.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			margin-bottom: 107px;
+		}
+
+		/*네비게이터*/
+		.banner .navbar{
+			height: 70px;
+		}
+
+		.banner .navbar .logo{
+			float: left;
+			margin-left: 45px;
+			margin-top: 9px;
+		}
+
+		.banner .navbar .logo img{
+			width: 164px;
+			height: 55px;
+			vertical-align: middle;
+		}
+
+		.banner .navbar .menu{
+			float: left;
+			margin-left: 260px;
+			margin-top: 27px;
+			list-style: none;
+		}
+
+		.banner .navbar .menu li{
+			float: left;
+			margin-right: 20px;
+		}
+
+		.banner .navbar .menu a{
+			text-decoration: none;
+			padding: 27px 20px;
+			color: white;
+			font-size: 16px;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		.banner .navbar .menu a:hover{
+			background-color: white;
+			color: #D82929;
+			padding: 27px 20px;
+		}
+
+		.banner .navbar .icon{
+			float: right;
+			margin-right: 194px;
+		}
+
+		.banner .navbar .icon img{
+			height: 24px;
+			width: 24px;
+			vertical-align: middle;
+			margin-top: 25px;
+		}
+
+		/*배너 텍스트*/
+		.banner2{
+			margin-top: 100px;
+			margin-left: 1000px;
+
+		}
+
+		.banner2 .banner-main{
+			color: white;
+			line-height: 77.45px;
+			font-size: 64px;
+			font-weight: 700;
+			margin-bottom: 38px;
+		}
+
+		.banner2 .banner-sub{
+			color: white;
+			font-size: 32px;
+			font-weight: 600;
+			margin-bottom: 2px;
+		}
+
+		.banner2 .banner-sub2{
+			color: white;
+			font-size: 24px;
+			font-weight: 500;
+			margin-bottom: 17px;
+		}
+
+		.banner2 .banner-button{
+			text-align: center;
+			padding: 10px 25px;
+			color: #D82929;
+			width: 115px;
+			height: 43px;
+			font-size: 16px;
+			font-weight: 700;
+			background-color: white;
+			border-radius: 5px;
+		}
+
+		
+
+		.container{
+			width: 1115px;
+			height: 486px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 203px;
+		}
+
+		.container2{
+			width: 1115px;
+			height: 279px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 79px;
+		}
+
+		.text1{
+			margin-bottom: 42px;
+		}
+
+		.text1 h1{
+			font-size: 36px;
+			font-weight: 700;
+			margin-bottom: 7px;
+		}
+
+		.text1 h2{
+			font-size: 18px;
+			font-weight: 500;
+		}
+
+		.content1{
+			width: 251px;
+			height: 371px;
+			border-radius: 30px;
+			background-color: white;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			float: left;
+		}
+
+		.content1 img{
+			width: 251px;
+			height: 371px;
+			border-radius: 30px;
+		}
+
+		.content1:not(:nth-child(5n)){
+			margin-right: 37px;
+		}
+		
+		.middle{
+			width: 100%;
+			height: 180px;
+			background-color: #D82929;
+			text-align: center;
+			color: white;
+			padding: 45px 545px;
+			margin-bottom: 117px;
+		}
+
+		.middle h3{
+			font-size: 28px;
+			font-weight: normal;
+		}
+
+		.middle h4{
+			font-size: 40px;
+			font-weight: bold;
+		}
+
+		/*주요 소프트웨어*/
+
+		.content2{
+			width: 214px;
+			height: 371px;
+			border-radius: 30px;
+			background-color: #D9D9D9;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+			float: left;
+			text-align: center;
+		}
+
+		.content2 img{
+			height: 200px;
+			width: 200px;
+			border-radius: 30px;
+			padding: 18px;
+			margin-bottom: 40px;
+		}
+
+		.content2 h6{
+			font-size: 16px;
+			margin-bottom: 19px;
+
+		}
+
+		.content2 .button2{
+			background-color: white;
+			width: 136px;
+			height: 34px;
+			border-radius: 50px;
+			color: black;
+			font-size: 11px;
+			padding: 10px 30px;
+			vertical-align: center;
+			margin-left: 39px;
+		}
+
+		.content2:not(:nth-child(6n)){
+			margin-right: 11px;
+		}
+		
+		/*닌텐도*/
+
+		.content3{
+			width: 194px;
+			height: 200px;
+			float: left;
+			margin-bottom: 98px;
+		}
+
+		.content3:not(:nth-child(6n)){
+			margin-right: 35px;
+		}
+
+		.content3 img{
+			width: 194px;
+			height: 200px;
+			border-radius: 30px;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		}
+
+		.content3 img:hover{
+			width: 194px;
+			height: 200px;
+			border-radius: 30px;
+			box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		}
+
+		/*푸터*/
+		.footer{
+			float: left;
+			width: 100%;
+			height: 184px;
+			background-color: #F5F5F5;
+		}
+
+		.footer .logo2{
+		    float: left;
+		    margin-left: 45px;
+		    margin-top: 30px;
+		}
+
+		.footer .logo2 img{
+			width: 191px;
+			height: 52px;
+		}
+
+		.left-side .menu2{
+			width: 500px;
+			float: left;
+			margin-left: 21px;
+			margin-top: 35px;
+			list-style: none;
+			margin-bottom: 10px;
+		}
+
+		.left-side .menu2 li{
+			float: left;
+			margin-right: 32px;
+		}
+
+		.left-side .menu2 a{
+			text-decoration: none;
+			font-size: 12px;
+			color: black;
+			font-weight: bold;
+		}
+
+		.Explanation{
+			margin-left: 260px;
+			margin-top: 106px;
+		}
+
+		.right-side{
+			float: right;
+			text-align: right;
+			margin-right: 83px;
+			margin-top: 65px;
+		}
+
+		p{
+			font-size: 10px;
+		}
+
+		.right-side .number{
+			margin-bottom: 10px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="banner">
+			<div class="navbar">
+				<a class="logo" href="index.html"><img src="https://i.postimg.cc/43jBYg0r/Nintendo-svg.png" alt="Nintendo logo"></a>
+				<ul class="menu">
+					<li><a href="#">Nintendo Switch</a></li>
+					<li><a href="#">닌텐도</a></li>
+					<li><a href="game.html">소프트웨어</a></li>
+					<li><a href="#">고객지원 </a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="#">다운로드</a></li>
+				</ul>
+				<a class="icon" href="#"><img src="https://i.postimg.cc/BQx9shjS/pngwing-com-13.png" alt="login icon"></a>
+			</div>
+
+               <div class="banner2">
+				    <div class="banner-main">선명한 색감의<br>OLED<br>디스플레이</div>
+					<div class="banner-sub">Nintendo Switch</div>
+					<div class="banner-sub2">OLED 모델</div>
+					<div class="banner-button">판매 중</div>
+			</div>
+	</div>
+
+	<div class="container">
+		<div class="text1">
+			<h1>새롭게 알려드립니다.</h1>
+			<h2>News & Update</h2>
+		</div>
+			<div class="content1"><img src="http://static.marriedgames.com.br/81915bdb-sonic.jpg"></div>
+			<div class="content1"><img src="https://martmonster.com/files/attach/images/355809/666/381/c8192b9099e8845653ebee3584740c91.jpg"></div>
+			<div class="content1"><img src="https://mblogthumb-phinf.pstatic.net/MjAyMTA3MDdfMjkz/MDAxNjI1NjQzMjYyNDcy.8Zd9h389dLZVHy185CfUwvFBmTK_AXVKlvlSpaTaLF0g.mDwDnry6_DUyJKDLN_98JPQpk6hAIifG4RO5bIE6Keog.PNG.12512512/%EB%8B%8C%ED%85%90%EB%8F%84_%EC%8A%A4%EC%9C%84%EC%B9%98_OLED_%EB%AA%A8%EB%8D%B8_%EC%8D%B8%EB%84%A4%EC%9D%BC.png?type=w800"></div>
+			<div class="content1"><img src="https://post-phinf.pstatic.net/MjAyMTAyMjhfMTg1/MDAxNjE0NTE2MjE5NzM0.YJvinwyajYQasssB6Q3gPKYNWShiq_984NoML5dr5vog.zvmuPuEDDpPNSDEeKqps4zuhnZ8rx6G0qODYBM6Hdgkg.JPEG/0001.jpg?type=w1200"></div>
+	</div>
+
+	<div class="middle">
+		<h3>Nintendo Switch</h3>
+		<h4>닌텐도 선불 번호 구입</h4>
+	</div>
+
+	<div class="container">
+		<div class="text1">
+			<h1>주요 소프트웨어</h1>
+			<h2>Game Title</h2>
+		</div>
+			<div class="content2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUzLd3_yzmS3Ay83NyuHowmXKb08Fsd_9pD9zihcf7EjWyic5jomjyaJc7OJIe3Se70Ic&usqp=CAU">
+			<h6>별의 커비</h6>
+			<div class="button2">체험하러 가기</div></div>
+			<div class="content2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkJ3W2vBaOcy9-j9tTtyT549hlCA-pOiUOvh7rxurMvGbYHzy_oJJnVXeXfxzi4eCD7dk&usqp=CAU">
+			<h6>포켓몬스터</h6>
+			<div class="button2">체험하러 가기</div></div>
+			<div class="content2"><img src="http://itimg.chosun.com/sitedata/image/201811/08/2018110801898_0.jpg">
+			<h6>마리오</h6>
+			<div class="button2">체험하러 가기</div></div>
+			<div class="content2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZE0jrWnE0po-cZtwjS1s3n9tEu-t57djFCycCqweHdde-omRGwkvdHTJN8jpVQ8DOuoc&usqp=CAU">
+			<h6>동물의 숲</h6>
+			<div class="button2">체험하러 가기</div></div>
+			<div class="content2"><img src="https://pbs.twimg.com/profile_images/875000659510165505/19klN6eI_400x400.jpg">
+			<h6>E-sport</h6>
+			<div class="button2">체험하러 가기</div></div>
+	</div>
+
+	<div class="sub-content"></div>
+
+	<div class="container2">
+		<div class="text1">
+			<h1>닌텐도</h1>
+			<h2>Nintendo's SNS</h2>
+		</div>
+
+			<div class="content3">
+				<a href="https://www.youtube.com/channel/UCRCK5FCJtomQT3b88jXI_DA">
+				<img src="https://i.postimg.cc/VN4ZxhYS/image.png">
+				</a>
+			</div>
+			<div class="content3">
+				<a href="https://story.kakao.com/ch/nintendokorea/">
+				<img src="https://i.postimg.cc/QdqrM08D/images.jpg">
+				</a>
+			</div>
+			<div class="content3">
+				<a href="https://www.facebook.com/Nintendo.kr">
+				<img src="https://i.postimg.cc/RC39T7R1/facebook-icon-26.png">
+				</a>
+			</div>
+			<div class="content3">
+				<a href="https://twitter.com/Nintendo_Korea">
+				<img src="https://i.postimg.cc/xCXrtQKj/124021.png">
+				</a>
+			</div>
+			<div class="content3">
+				<a href="https://my.nintendo.com/">
+				<img src="https://i.postimg.cc/dQTPCqs4/unnamed.png">
+				</a>
+			</div>
+		</div>
+
+
+		<div class="footer">
+			<div class="left-side">
+				<div class="logo2"><img src="https://i.postimg.cc/W36gsccm/pngwing-com-14.png" alt="Nintendo logo2"></div>
+				<ul class="menu2">
+					<li><a class="red" href="#">개인정보처리방침</a></li>
+					<li><a href="#">이메일수집 거부</a></li>
+					<li><a href="#">거래희망사전등록</a></li>
+					<li><a href="#">오시는길 </a></li>
+					<li><a href="#">공지사항</a></li>
+				</ul>
+			</div>
+
+					<div class="right-side">
+						<p>고객지원 문의전화</p>
+						<div class="number">1670-9900</div>
+
+						<p>(평일 오전 9시 30분~오후 5시 30분)<br>
+						※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+					</div>
+				<div class="Explanation">
+				<p>ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.<br>
+				상호명 : 한국닌텐도주식회사 대표자명 : 미우라 타카히로 사업자등록번호 : 120-87-03578</p>
+				</div>
+			</div>
+
+</body>
+</html>

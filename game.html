@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nintendo game</title>
+	<style>
+		*{  box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		.banner{
+			width: 100%;
+			height: 824px;
+			background-color: #E60213;
+		}
+
+		/*네비게이터*/
+		.banner .navbar{
+			height: 70px;
+		}
+
+		.banner .navbar .logo{
+			float: left;
+			margin-left: 45px;
+			margin-top: 9px;
+		}
+
+		.banner .navbar .logo img{
+			width: 164px;
+			height: 55px;
+			vertical-align: middle;
+		}
+
+		.banner .navbar .menu{
+			float: left;
+			margin-left: 260px;
+			margin-top: 27px;
+			list-style: none;
+		}
+
+		.banner .navbar .menu li{
+			float: left;
+			margin-right: 20px;
+		}
+
+		.banner .navbar .menu a{
+			text-decoration: none;
+			padding: 27px 20px;
+			color: white;
+			font-size: 16px;
+			font-weight: 600;
+			text-align: center;
+		}
+
+		.banner .navbar .menu a:hover{
+			background-color: white;
+			color: #D82929;
+			padding: 27px 20px;
+		}
+
+		.banner .navbar .icon{
+			float: right;
+			margin-right: 194px;
+		}
+
+		.banner .navbar .icon img{
+			height: 24px;
+			width: 24px;
+			vertical-align: middle;
+			margin-top: 25px;
+		}
+
+		/*배너 버튼*/
+		.banner .group{
+			display: inline-block;
+			vertical-align: middle;
+			line-height: normal;
+
+			width: 100%;
+			text-align: center;
+			margin-top: 250px;
+		}
+
+		.banner .group .main-button img{
+			width: 160px;
+			height: 150px;
+			margin-bottom: 22px;
+		}
+
+		.banner .group h3{
+			font-size: 16px;
+			color: white;
+			font-weight: 400px;
+		}
+		
+		/*게임 내용 페이지*/
+		.page1{
+			color: white;
+			width: 100%;
+			height: 824px;
+			background-image: url(https://www.nintendo.co.kr/front_images/banner/rolling/185/05a8e929b483d78c07d1802b1bc2fab5.jpg);
+		    background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.page2{
+			color: white;
+			width: 100%;
+			height: 824px;
+			background-image: url(https://www.nintendo.co.kr/front_images/banner/rolling/185/a3aeaeb4cb7b69750ab032e788dca38d.jpg);
+		    background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.page3{
+			color: white;
+			width: 100%;
+			height: 824px;
+			background-image: url(https://www.nintendo.co.kr/front_images/banner/rolling/185/1957adefe5fb0dc46464eb6443aabf7d.jpg);
+		    background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.page4{
+			color: white;
+			width: 100%;
+			height: 824px;
+			background-image: url(https://www.nintendo.co.kr/front_images/banner/rolling/185/a342405996c8faabc600a0687be3fb01.jpg);
+		    background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.page5{
+			color: white;
+			width: 100%;
+			height: 824px;
+			background-image: url(https://www.nintendo.co.kr/front_images/banner/rolling/185/aa23a3cdcde8c65979d2e28dae03bd24.jpg);
+		    background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		.text{
+			opacity: 0.7;
+			width: 50%;
+			height: 824px;
+			float: right;
+			background-color: black;
+		}
+
+		.text .text2{
+			margin-left: 61px;
+			margin-top: 257px;
+		}
+
+		h1{
+			font-size: 36px;
+			font-weight: 700;
+			margin-bottom: 22px;
+		}
+
+		h2{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 23px;
+		}
+
+		h2:after {
+	        content: "";
+	        display: block;
+	        width: 75px;
+	        border-bottom: 1px solid #ffffff;
+	        margin: 20px 0px;
+       }
+
+		p{
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 23px;
+			margin-bottom: 26px;
+		}
+
+		.button{
+			background-color: white;
+			width: 185px;
+			height: 45px;
+			border-radius: 50px;
+			padding: 13px 60px;
+		}
+
+		.button a{
+			font-weight: 700;
+			font-size: 16px;
+			text-decoration: none;
+			text-align: center;
+			color: black;
+		}
+
+		/*푸터*/
+		.footer{
+			float: left;
+			width: 100%;
+			height: 184px;
+			background-color: #F5F5F5;
+		}
+
+		.footer .logo2{
+		    float: left;
+		    margin-left: 45px;
+		    margin-top: 30px;
+		}
+
+		.footer .logo2 img{
+			width: 191px;
+			height: 52px;
+		}
+
+		.left-side .menu2{
+			width: 500px;
+			float: left;
+			margin-left: 21px;
+			margin-top: 35px;
+			list-style: none;
+			margin-bottom: 10px;
+		}
+
+		.left-side .menu2 li{
+			float: left;
+			margin-right: 32px;
+		}
+
+		.left-side .menu2 a{
+			text-decoration: none;
+			font-size: 12px;
+			color: black;
+			font-weight: bold;
+		}
+
+		.Explanation{
+			margin-left: 260px;
+			margin-top: 106px;
+		}
+
+		.right-side{
+			float: right;
+			text-align: right;
+			margin-right: 83px;
+			margin-top: 65px;
+		}
+
+		p{
+			font-size: 10px;
+		}
+
+		.right-side .number{
+			margin-bottom: 10px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="banner">
+			<div class="navbar">
+				<a class="logo" href="index.html"><img src="https://i.postimg.cc/43jBYg0r/Nintendo-svg.png" alt="Nintendo logo"></a>
+				<ul class="menu">
+					<li><a href="#">Nintendo Switch</a></li>
+					<li><a href="#">닌텐도</a></li>
+					<li><a href="game.html">소프트웨어</a></li>
+					<li><a href="#">고객지원 </a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="#">다운로드</a></li>
+				</ul>
+				<a class="icon" href="#"><img src="https://i.postimg.cc/BQx9shjS/pngwing-com-13.png" alt="login icon"></a>
+			</div>
+
+			<div class="group">
+				<div class="main-button"><img src="https://i.postimg.cc/FR85YL4N/pngwing-com-15.png"></div>
+				<h3>The title of the main software Nintendo game</h3>
+			</div>
+		</div>
+
+		<div class="page1">
+			<div class="text">
+				<div class="text2">
+					<h1>별의 커비</h1>
+					<h2>Star Kirby</h2>
+					<p>『별의 커비』 시리즈 최신작의 무대는,<br>
+						문명과 자연이 융합한 미지의 「새로운 세계」<br>
+						빨아들이고, 뱉고, 날고, 카피를 합니다.<br>
+						깊이가 있는 3D 스테이지를, 커비의 친숙한<br>
+						액션으로 자유롭게 돌아다니며 모험합니다.</p>
+				<div class="button"><a href="#">체험하기</a></div>
+			</div>
+		</div>
+	</div>
+
+		<div class="page2">
+			<div class="text">
+				<div class="text2">
+					<h1>포켓몬스터</h1>
+					<h2>poketmon</h2>
+					<p>『별의 커비』 시리즈 최신작의 무대는,<br>
+						문명과 자연이 융합한 미지의 「새로운 세계」<br>
+						빨아들이고, 뱉고, 날고, 카피를 합니다.<br>
+						깊이가 있는 3D 스테이지를, 커비의 친숙한<br>
+						액션으로 자유롭게 돌아다니며 모험합니다.</p>
+				<div class="button"><a href="#">체험하기</a></div>
+			</div>
+		</div>
+	</div>
+
+		<div class="page3">
+			<div class="text">
+				<div class="text2">
+					<h1>마리오</h1>
+					<h2>mario</h2>
+					<p>『별의 커비』 시리즈 최신작의 무대는,<br>
+						문명과 자연이 융합한 미지의 「새로운 세계」<br>
+						빨아들이고, 뱉고, 날고, 카피를 합니다.<br>
+						깊이가 있는 3D 스테이지를, 커비의 친숙한<br>
+						액션으로 자유롭게 돌아다니며 모험합니다.</p>
+				<div class="button"><a href="#">체험하기</a></div>
+			</div>
+		</div>
+	</div>
+
+		<div class="page4">
+			<div class="text">
+				<div class="text2">
+					<h1>동물의 숲</h1>
+					<h2>toubutsunomori</h2>
+					<p>『별의 커비』 시리즈 최신작의 무대는,<br>
+						문명과 자연이 융합한 미지의 「새로운 세계」<br>
+						빨아들이고, 뱉고, 날고, 카피를 합니다.<br>
+						깊이가 있는 3D 스테이지를, 커비의 친숙한<br>
+						액션으로 자유롭게 돌아다니며 모험합니다.</p>
+				<div class="button"><a href="#">체험하기</a></div>
+			</div>
+		</div>
+	</div>
+
+		<div class="page5">
+			<div class="text">
+				<div class="text2">
+					<h1>E-Sport</h1>
+					<h2>enternet sport</h2>
+					<p>『별의 커비』 시리즈 최신작의 무대는,<br>
+						문명과 자연이 융합한 미지의 「새로운 세계」<br>
+						빨아들이고, 뱉고, 날고, 카피를 합니다.<br>
+						깊이가 있는 3D 스테이지를, 커비의 친숙한<br>
+						액션으로 자유롭게 돌아다니며 모험합니다.</p>
+				<div class="button"><a href="#">체험하기</a></div>
+			</div>
+		</div>
+	</div>
+
+
+		<div class="footer">
+			<div class="left-side">
+				<div class="logo2"><img src="https://i.postimg.cc/W36gsccm/pngwing-com-14.png" alt="Nintendo logo2"></div>
+				<ul class="menu2">
+					<li><a class="red" href="#">개인정보처리방침</a></li>
+					<li><a href="#">이메일수집 거부</a></li>
+					<li><a href="#">거래희망사전등록</a></li>
+					<li><a href="#">오시는길 </a></li>
+					<li><a href="#">공지사항</a></li>
+				</ul>
+			</div>
+
+					<div class="right-side">
+						<p>고객지원 문의전화</p>
+						<div class="number">1670-9900</div>
+
+						<p>(평일 오전 9시 30분~오후 5시 30분)<br>
+						※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+					</div>
+				<div class="Explanation">
+				<p>ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.<br>
+				상호명 : 한국닌텐도주식회사 대표자명 : 미우라 타카히로 사업자등록번호 : 120-87-03578</p>
+				</div>
+			</div>
+</body>
+</html>
